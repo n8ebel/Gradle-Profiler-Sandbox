@@ -1,15 +1,24 @@
 *.iml
 .gradle
+
+local.properties
 /local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+
 .DS_Store
 /build
 /captures
 .externalNativeBuild
 .cxx
-local.properties
+
+# Default to ignoring IDEA directory
+/.idea/*
+
+# IDEA/Android Studio Ignore exceptions
+!/.idea/codeStyles/
+!/.idea/vcs.xml
+!/.idea/fileTemplates/
+!/.idea/inspectionProfiles/
+!/.idea/scopes/
+!/.idea/encodings.xml
+!/.idea/copyright/
+!/.idea/compiler.xml
