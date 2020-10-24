@@ -22,3 +22,6 @@ local.properties
 !/.idea/encodings.xml
 !/.idea/copyright/
 !/.idea/compiler.xml
+
+gradle-user-home/
+profile-out*

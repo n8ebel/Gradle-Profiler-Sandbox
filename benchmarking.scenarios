@@ -1,0 +1,15 @@
+1_assemble_clean {
+    title = "Clean Assemble"
+    tasks = ["clean", "assemble"]
+    gradle-args = ["--no-build-cache"]
+}
+
+2_assemble_clean_caching {
+    title = "Clean Assemble w/ Caching"
+    tasks = ["clean", "assemble"]
+}
+
+3_assemble_no_op {
+    title = "Up-To-Date Assemble"
+    tasks = ["assemble"]
+}
