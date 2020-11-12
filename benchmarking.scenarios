@@ -1,15 +1,23 @@
-1_assemble_clean {
+assemble_clean {
     title = "Clean Assemble"
     tasks = ["clean", "assemble"]
-    gradle-args = ["--no-build-cache"]
 }
 
-2_assemble_clean_caching {
+assemble_clean_caching {
     title = "Clean Assemble w/ Caching"
     tasks = ["clean", "assemble"]
 }
 
-3_assemble_no_op {
+assemble_no_op {
     title = "Up-To-Date Assemble"
     tasks = ["assemble"]
+}
+
+incremental_build {
+    title = "Incremental Assemble w/ Caching"
+    tasks = ["assemble"]
+
+    apply-abi-change-to = "app/src/main/java/com/goobar/gradleprofilersandbox/MainActivity.kt"
+    apply-android-resource-change-to = "app/src/main/res/values/strings.xml"
+    apply-android-resource-value-change-to = "app/src/main/res/values/strings.xml"
 }
